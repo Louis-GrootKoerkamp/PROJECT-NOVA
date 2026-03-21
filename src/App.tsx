@@ -188,18 +188,34 @@ const TeamSection = () => {
           {team.map((member, idx) => (
             <motion.div 
               key={idx}
-              whileHover={{ y: -10 }}
+              initial="initial"
+              whileHover="hover"
+              whileInView="inView"
+              viewport={{ once: false, amount: 0.6 }}
               className="relative group"
             >
-              <div className={`relative aspect-[4/5] bg-white border-2 border-ink p-4 transition-all duration-300 ${member.shadow}`}>
-                <img 
+              <motion.div 
+                variants={{
+                  initial: { y: 0 },
+                  hover: { y: -10 },
+                  inView: { y: 0 }
+                }}
+                className={`relative aspect-[4/5] bg-white border-2 border-ink p-4 transition-all duration-300 ${member.shadow}`}
+              >
+                <motion.img 
+                  variants={{
+                    initial: { filter: "grayscale(100%)" },
+                    hover: { filter: "grayscale(0%)" },
+                    inView: { filter: "grayscale(0%)" }
+                  }}
+                  transition={{ duration: 0.5 }}
                   src={member.img} 
                   alt={member.name} 
                   loading="lazy"
-                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
                 />
-              </div>
+              </motion.div>
               <div className="mt-8">
                 <h3 className="text-4xl font-black uppercase tracking-tighter text-ink">{member.name}</h3>
                 <p className="text-lg font-serif italic text-ink/60">{member.role}</p>
@@ -399,16 +415,41 @@ const WorkSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project 1 */}
-          <motion.div whileHover={{ y: -10 }} className="relative group">
-            <div className="relative aspect-[4/5] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#00BCD4]">
-              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" alt="The Local Baker case study" loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" referrerPolicy="no-referrer" />
+          <motion.div 
+            initial="initial"
+            whileHover="hover"
+            whileInView="inView"
+            viewport={{ once: false, amount: 0.6 }}
+            className="relative group"
+          >
+            <motion.div 
+              variants={{
+                initial: { y: 0 },
+                hover: { y: -10 },
+                inView: { y: 0 }
+              }}
+              className="relative aspect-[4/5] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#00BCD4]"
+            >
+              <motion.img 
+                variants={{
+                  initial: { filter: "grayscale(100%)" },
+                  hover: { filter: "grayscale(0%)" },
+                  inView: { filter: "grayscale(0%)" }
+                }}
+                transition={{ duration: 0.5 }}
+                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=600" 
+                alt="The Local Baker case study" 
+                loading="lazy" 
+                className="w-full h-full object-cover" 
+                referrerPolicy="no-referrer" 
+              />
               <div className="absolute top-8 right-8 bg-ink text-neutral px-3 py-1 text-[10px] font-black uppercase tracking-widest z-10">Online Presence</div>
               <div className="absolute inset-4 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20">
                 <p className="text-ink font-serif italic mb-2 text-sm md:text-base">Problem: Outdated static landing page.</p>
                 <p className="text-ink font-serif italic mb-2">Solution: Intuitive UX & 1-Click Ordering.</p>
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">Result: +140% Orders</p>
               </div>
-            </div>
+            </motion.div>
             <div className="mt-6">
               <h3 className="text-3xl font-black uppercase tracking-tighter">The Local Baker</h3>
               <p className="text-lg font-serif italic text-secondary">Community Flourishing</p>
@@ -416,9 +457,34 @@ const WorkSection = () => {
           </motion.div>
 
           {/* Project 2 */}
-          <motion.div whileHover={{ y: -10 }} className="relative group md:mt-24">
-            <div className="relative aspect-[3/4] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#E91E63]">
-              <img src="/yoga.png" alt="Utrecht Yoga Hub case study" loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all" referrerPolicy="no-referrer" />
+          <motion.div 
+            initial="initial"
+            whileHover="hover"
+            whileInView="inView"
+            viewport={{ once: false, amount: 0.6 }}
+            className="relative group md:mt-24"
+          >
+            <motion.div 
+              variants={{
+                initial: { y: 0 },
+                hover: { y: -10 },
+                inView: { y: 0 }
+              }}
+              className="relative aspect-[3/4] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#E91E63]"
+            >
+              <motion.img 
+                variants={{
+                  initial: { filter: "grayscale(100%)" },
+                  hover: { filter: "grayscale(0%)" },
+                  inView: { filter: "grayscale(0%)" }
+                }}
+                transition={{ duration: 0.5 }}
+                src="/yoga.png" 
+                alt="Utrecht Yoga Hub case study" 
+                loading="lazy" 
+                className="w-full h-full object-cover" 
+                referrerPolicy="no-referrer" 
+              />
               <div className="absolute inset-4 bg-secondary/95 opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col items-center text-center justify-center border-2 border-ink text-neutral overflow-hidden z-20">
                 <p className="font-serif italic mb-2 text-ink">Problem: Messy WhatsApp booking.</p>
                 <p className="font-serif italic mb-2 text-ink">Solution: Seamless Member Dashboard.</p>
@@ -427,7 +493,7 @@ const WorkSection = () => {
               <div className="absolute -bottom-6 -right-6 bg-tertiary text-ink p-4 border-2 border-ink font-black text-xs uppercase tracking-widest rotate-3 z-30">
                 Digital Transformation
               </div>
-            </div>
+            </motion.div>
             <div className="mt-12">
               <h3 className="text-3xl font-black uppercase tracking-tighter">Utrecht Yoga Hub</h3>
               <p className="text-lg font-serif italic text-primary">Seamless Member Flow</p>
@@ -435,13 +501,32 @@ const WorkSection = () => {
           </motion.div>
 
           {/* Project 3 */}
-          <motion.div whileHover={{ y: -10 }} className="relative group">
-            <div className="relative aspect-[4/5] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#FFEB3B]">
-              <img 
+          <motion.div 
+            initial="initial"
+            whileHover="hover"
+            whileInView="inView"
+            viewport={{ once: false, amount: 0.6 }}
+            className="relative group"
+          >
+            <motion.div 
+              variants={{
+                initial: { y: 0 },
+                hover: { y: -10 },
+                inView: { y: 0 }
+              }}
+              className="relative aspect-[4/5] bg-white border-2 border-ink p-4 shadow-[8px_8px_0px_0px_#FFEB3B]"
+            >
+              <motion.img 
+                variants={{
+                  initial: { filter: "grayscale(100%)" },
+                  hover: { filter: "grayscale(0%)" },
+                  inView: { filter: "grayscale(0%)" }
+                }}
+                transition={{ duration: 0.5 }}
                 src="/vintage.png" 
                 alt="Vintage Vault website design"
                 loading="lazy"
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover"
               />
               <div className="absolute top-8 left-8 bg-secondary text-neutral px-3 py-1 text-[10px] font-black uppercase tracking-widest z-10">Brand Logic</div>
               <div className="absolute inset-4 bg-tertiary/95 opacity-0 group-hover:opacity-100 transition-opacity p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20">
@@ -449,7 +534,7 @@ const WorkSection = () => {
                 <p className="text-ink font-serif italic mb-2 text-sm md:text-base">Solution: Immersive Brand Storytelling.</p>
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">Result: 3x Store Visits</p>
               </div>
-            </div>
+            </motion.div>
             <div className="mt-6">
               <h3 className="text-3xl font-black uppercase tracking-tighter">Vintage Vault</h3>
               <p className="text-lg font-serif italic text-ink/60">Digital Storytelling</p>
