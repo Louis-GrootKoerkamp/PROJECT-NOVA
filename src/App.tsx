@@ -422,6 +422,10 @@ const WorkSection = () => {
             viewport={{ once: false, amount: 0.6 }}
             className="relative group"
           >
+            <div className="mb-6">
+              <h3 className="text-3xl font-black uppercase tracking-tighter">The Local Baker</h3>
+              <p className="text-lg font-serif italic text-secondary">Community Flourishing</p>
+            </div>
             <motion.div 
               variants={{
                 initial: { y: 0 },
@@ -450,10 +454,6 @@ const WorkSection = () => {
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">Result: +140% Orders</p>
               </div>
             </motion.div>
-            <div className="mt-6">
-              <h3 className="text-3xl font-black uppercase tracking-tighter">The Local Baker</h3>
-              <p className="text-lg font-serif italic text-secondary">Community Flourishing</p>
-            </div>
           </motion.div>
 
           {/* Project 2 */}
@@ -464,6 +464,10 @@ const WorkSection = () => {
             viewport={{ once: false, amount: 0.6 }}
             className="relative group md:mt-24"
           >
+            <div className="mb-6">
+              <h3 className="text-3xl font-black uppercase tracking-tighter">Utrecht Yoga Hub</h3>
+              <p className="text-lg font-serif italic text-primary">Seamless Member Flow</p>
+            </div>
             <motion.div 
               variants={{
                 initial: { y: 0 },
@@ -494,10 +498,6 @@ const WorkSection = () => {
                 Digital Transformation
               </div>
             </motion.div>
-            <div className="mt-12">
-              <h3 className="text-3xl font-black uppercase tracking-tighter">Utrecht Yoga Hub</h3>
-              <p className="text-lg font-serif italic text-primary">Seamless Member Flow</p>
-            </div>
           </motion.div>
 
           {/* Project 3 */}
@@ -508,6 +508,10 @@ const WorkSection = () => {
             viewport={{ once: false, amount: 0.6 }}
             className="relative group"
           >
+            <div className="mb-6">
+              <h3 className="text-3xl font-black uppercase tracking-tighter">Vintage Vault</h3>
+              <p className="text-lg font-serif italic text-ink/60">Digital Storytelling</p>
+            </div>
             <motion.div 
               variants={{
                 initial: { y: 0 },
@@ -535,10 +539,6 @@ const WorkSection = () => {
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">Result: 3x Store Visits</p>
               </div>
             </motion.div>
-            <div className="mt-6">
-              <h3 className="text-3xl font-black uppercase tracking-tighter">Vintage Vault</h3>
-              <p className="text-lg font-serif italic text-ink/60">Digital Storytelling</p>
-            </div>
           </motion.div>
         </div>
       </div>
