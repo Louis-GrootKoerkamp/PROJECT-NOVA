@@ -17,4 +17,17 @@ View your app in AI Studio: https://ai.studio/apps/465a6f04-2482-4ffc-b584-9fad6
    `npm install`
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
-   `npm run dev`
+   ## UI/UX Pro Max Skill
+
+This project is equipped with the [UI/UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) design intelligence skill for Antigravity.
+
+**Features:**
+- Intelligent Design System Generation
+- 67 UI Styles & 161 Color Palettes
+- 99 UX Guidelines & 57 Font Pairings
+
+**Usage:**
+The skill is automatically activated for UI/UX related tasks. You can also manually trigger the design system generator:
+```bash
+python3 .agent/skills/ui-ux-pro-max/scripts/search.py "your product description" --design-system -p "STUDIO-NOVA"
+```
