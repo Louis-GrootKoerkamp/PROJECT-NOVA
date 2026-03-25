@@ -20,37 +20,24 @@ export const ReviewsSection = ({ language }: { language: Language }) => {
           </p>
         </div>
 
-        <motion.div 
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.1
-              }
-            }
-          }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {t.list.map((review, idx) => (
             <motion.div
               key={idx}
-              variants={{
-                hidden: { opacity: 0, y: 40, scale: 0.95, rotate: idx % 2 === 0 ? -2 : 2 },
-                visible: { 
-                  opacity: 1, 
-                  y: 0, 
-                  scale: 1, 
-                  rotate: rot[idx] === "-rotate-2" ? -2 : rot[idx] === "rotate-3" ? 3 : rot[idx] === "rotate-1" ? 1 : -3,
-                  transition: {
-                    duration: 0.8,
-                    ease: [0.16, 1, 0.3, 1]
-                  }
-                }
+              initial={{ opacity: 0, y: 50, scale: 0.9, rotate: idx % 2 === 0 ? -2 : 2 }}
+              whileInView={{ 
+                opacity: 1, 
+                y: 0, 
+                scale: 1, 
+                rotate: rot[idx] === "-rotate-2" ? -2 : rot[idx] === "rotate-3" ? 3 : rot[idx] === "rotate-1" ? 1 : -3,
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                damping: 20,
+                delay: isMobile ? 0 : idx * 0.1,
+                duration: 1.2
               }}
               className={`flex flex-col p-8 border-4 border-neutral shadow-[12px_12px_0px_0px_#f5f5f5] ${cardColors[idx]} hover:rotate-0 transition-transform duration-300`}
             >
@@ -70,7 +57,7 @@ export const ReviewsSection = ({ language }: { language: Language }) => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
       
       {/* Background elements */}
