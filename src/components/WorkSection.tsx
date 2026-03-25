@@ -180,7 +180,7 @@ export const WorkSection = ({ language, isMobile }: { language: Language, isMobi
                 loading="lazy"
                 className="w-full h-full object-cover"
               />
-              <div className="absolute top-8 left-8 bg-tertiary text-ink px-3 py-1 text-[10px] font-black uppercase tracking-widest z-10">{t.label_branding}</div>
+              <div className="absolute top-8 left-8 bg-ink text-tertiary px-3 py-1 text-[10px] font-black uppercase tracking-widest z-30">{t.label_branding}</div>
               <motion.div 
                 variants={{
                   initial: { opacity: 0 },

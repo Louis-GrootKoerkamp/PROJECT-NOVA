@@ -91,7 +91,7 @@ export const translations = {
         },
         vintage_vault: {
           title: "Vintage Vault",
-          subtitle: "Digital Storytelling",
+          subtitle: "BRANDING",
           problem: "Problem: Weak store-front identity.",
           solution: "Solution: Brand Storytelling.",
           result: "Result: 400% Online Growth"
@@ -276,7 +276,7 @@ export const translations = {
         },
         vintage_vault: {
           title: "Vintage Vault",
-          subtitle: "Digital Storytelling",
+          subtitle: "BRANDING",
           problem: "Probleem: Zwakke identiteit van de zaak.",
           solution: "Oplossing: brand storytelling.",
           result: "Resultaat: 400% online groei"
