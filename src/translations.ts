@@ -2,17 +2,16 @@ export const translations = {
   en: {
     nav: {
       work: "Our Work",
-      team: "The Team",
-      local: "Local Love",
-      hi: "Say Hi",
-      start: "Start a Project"
+      team: "The Squad",
+      local: "Impact",
+      start: "Book Trial"
     },
     hero: {
       location: "Based in Utrecht",
       title_part1: "The",
       title_nova: "Nova",
       title_part2: "Formula.",
-      description: "\"We take the digital headache away so you can focus on your craft. We engineer beautiful landmarks that turn silent browsers into <span class=\"text-secondary underline decoration-primary decoration-4 underline-offset-4\">loyal customers.</span>\"",
+      description: "\"We take the digital headache away so you can focus on what really matters. We engineer beautiful landmarks that turn silent browsers into <span class=\"text-secondary underline decoration-primary decoration-4 underline-offset-4\">loyal customers.</span>\"",
       cta_primary: "Scale Your Brand",
       cta_secondary: "Meet the Squad",
       team_caption: "Utrecht's finest."
@@ -33,17 +32,17 @@ export const translations = {
       title_part2: "Impact.",
       subtitle: "What our partners say about the Nova Formula.",
       list: [
-        { name: "Yara", company: "Yoga Hub", text: "A real relief. Everything was live in no time and it works flawlessly.", stars: 5 },
-        { name: "Sander", company: "Bakery de Tijd", text: "I didn't know we could move this fast without sacrificing quality. The team really thinks along with you.", stars: 5 },
-        { name: "Daan", company: "Coffee Culture", text: "The personal approach made the difference. Now the automation runs in the background, perfect.", stars: 5 },
-        { name: "Lisa", company: "Vintage Vault", text: "Just great to work with people who do what they say. Every weekly deadline was met.", stars: 5 }
+        { name: "Mandy", company: "Magic Piercing Studio", text: "Everything was live in no time and it works flawlessly.", stars: 5 },
+        { name: "Lego", company: "Stubborn Tattoo Studio", text: "The team really thinks along with you.", stars: 5 },
+        { name: "Christel", company: "Love by Sera", text: "The personal approach made the difference. Now the automation runs in the background, perfect.", stars: 5 },
+        { name: "Clemens", company: "Clemens RA", text: "Just great to work with people who do what they say. Deadlines were always met.", stars: 5 }
       ]
     },
     howWeRoll: {
       title_part1: "The",
       title_nova: "Nova",
       title_edge: "Edge.",
-      description: "We've ditched the agency hierarchy to give you direct access to the tech. We're young, we're fast, and we actually care about your bottom line.",
+      description: "We're young, fast, and actually care about your bottom line.",
       tags: {
         tech: "High-Conversion Tech",
         ux: "Frictionless UX"
@@ -59,7 +58,7 @@ export const translations = {
         },
         community: {
           title: "Community",
-          desc: "We live, breathe, and drink coffee in Utrecht. Your shop is our pride."
+          desc: "We ensure visitors build a genuine connection with your brand. Not just one-time buyers, but loyal customers who keep coming back."
         },
         results: {
           title: "Results First",
@@ -77,65 +76,52 @@ export const translations = {
       label_branding: "Brand Logic",
       projects: {
         local_baker: {
-          title: "The Local Baker",
-          subtitle: "Community Flourishing",
+          title: "Magic Piercing Studio",
+          subtitle: "Clean Design",
           problem: "Problem: Outdated static landing page.",
-          solution: "Solution: Intuitive UX & 1-Click Ordering.",
-          result: "Result: +140% Orders"
+          solution: "Solution: SEO Optimization.",
+          result: "Result: +140% Customers"
         },
         yoga_hub: {
-          title: "Utrecht Yoga Hub",
-          subtitle: "Seamless Member Flow",
+          title: "Stubborn Tattoo Studio",
+          subtitle: "Member Flow",
           problem: "Problem: Messy WhatsApp booking.",
-          solution: "Solution: Seamless Member Dashboard.",
+          solution: "Solution: Member Dashboard.",
           result: "Result: Community Building"
         },
         vintage_vault: {
           title: "Vintage Vault",
           subtitle: "Digital Storytelling",
           problem: "Problem: Weak store-front identity.",
-          solution: "Solution: Immersive Brand Storytelling.",
-          result: "Result: 3x Store Visits"
+          solution: "Solution: Brand Storytelling.",
+          result: "Result: 400% Online Growth"
         }
       }
     },
     footer: {
       title_part1: "Focus on",
       title_craft: "Your Craft.",
-      description: "Tired of ghost-town websites and the endless headache of managing digital? We take all that pain away. We build elegant, high-performing machines that bring customers to your door—careless, good-working websites so you can get back to what you love doing.",
-      cta: "Launch Your Growth Protocol",
+      description: "Ready to skip the digital noise? We build elegant websites that bring clients to your door. Stress-free, high-performance web solutions so you can do what you love.",
+      cta: "Free website design",
+      cta_subtitle: "See how we can build your growth in 15 minutes",
+      cta_badge: "Free trial",
       nav: "Navigation",
-      links: ["Work", "Team", "Local", "Journal"],
-      copyright: "© 2026 NOVA UTRECHT. BUILT WITH LOVE & COFFEE.",
-      privacy: "Privacy",
-      terms: "Terms"
+      links: ["Work", "Team", "Impact"],
+      copyright: "© 2026 NOVA UTRECHT. BUILT WITH LOVE & COFFEE."
     },
     modal: {
-      title_part1: "Take the Next Step",
-      title_growth: "for your growth.",
-      description: "The aspirin for your digital headache. Book your call now and reclaim your focus on what truly matters for your business.",
-      form: {
-        name: "Name",
-        email: "Email",
-        url: "Company URL (Optional)",
-        bottleneck: {
-          label: "The Bottleneck",
-          placeholder: "What's holding you back?",
-          options: {
-            outdated: "Outdated Look",
-            conversions: "Low Conversions",
-            brand: "Brand Identity",
-            tech: "Technical Issues"
-          }
-        },
-        timeline: {
-          label: "Target Timeline",
-          asap: "ASAP",
-          nextMonth: "Next Month",
-          exploring: "Exploring"
-        },
-        submit: "Initialize Growth Protocol"
-      }
+      title_part1: "Schedule an appointment",
+      title_growth: "Free trial version of your website",
+      description: "After selecting a time, you can provide further information that we will incorporate into your personal website. Think of:",
+      submit: "Book Appointment",
+      checklist: [
+        "Business Name & Slogan",
+        "Core Activities & Services",
+        "Target Audience (Who are your customers?)",
+        "USPs (What makes you unique?)",
+        "Brand Identity (Colors, Logo, Fonts)",
+        "Inspiration & References (Sites you like)"
+      ]
     },
     sprint: {
       title_part1: "Just",
@@ -143,23 +129,24 @@ export const translations = {
       title_part2: "from Start to Finish",
       cta: "Get Started",
       days: [
-        { day: "Day 1", title: "The Baseline", desc: "Within 1-2 business days, we'll connect to discuss your project goals." },
-        { day: "Day 2", title: "The Kick-Off", desc: "Deep dive into strategy and defining the project's creative direction." },
-        { day: "Day 3-6", title: "The Design", desc: "Our team develops a fast, high-quality digital solution for your business." },
-        { day: "Day 7", title: "The Rollout", desc: "Exactly one week after the start, we deliver your finalized result." }
-      ]
+        { day: "Day 1", title: "THE BASIS", desc: "Share your vision and guidelines with us, so we can immediately bring the first tangible trial version of your website to life." },
+        { day: "Day 2", title: "THE KICK-OFF", desc: "Together, we'll dive into the initial design to seize every optimization opportunity and craft the perfect digital experience." },
+        { day: "Day 3-6", title: "THE DESIGN", desc: "Our team develops a fast, high-quality digital solution for your business." },
+        { day: "Day 7", title: "THE ROLLOUT", desc: "Exactly one week after the start, we deliver your finalized result." }
+      ],
+      feedback_popup: "Daily Design Updates"
     },
     packages: {
       title_part1: "Our",
       title_pro: "Packages",
-      subtitle: "Choose the fuel for your growth. From a solid foundation to a complete digital takeover.",
+      subtitle: "From a solid foundation to a complete digital takeover.",
       cta: "Initialize Protocol",
       scroll_cta: "Choose Your Fuel",
       tiers: [
         { title: "Digital Identity", desc: "Solid branding & SEO-optimized site.", features: ["Website Build", "Logo Design", "Brand Image", "SEO Optimized", "24/7 Hosting"] },
         { title: "Growth Accelerator", desc: "Scale fast with targeted marketing.", features: ["Everything in Basic", "Online Marketing", "Ads Strategy", "High-Conversion UX", "Lead Tracking"], popular: true },
-        { title: "Automation Expert", desc: "Automate flows and phone systems.", features: ["Everything in Pro", "Workflow Automations", "Phone Systems (AI)", "CRM Integration", "Smart Routing"] },
-        { title: "Content Powerhouse", desc: "Full production & ad management.", features: ["Everything in Expert", "Photo & Video Service", "Ad Production", "Full Ads Management", "Strategy Partner"] }
+        { title: "Smart Automation", desc: "Automate flows and phone systems.", features: ["Everything in Pro", "Workflow Automations", "Phone Systems (AI)", "CRM Integration", "Smart Routing"] },
+        { title: "Content & Performance", desc: "Full production & ad management.", features: ["Everything in Expert", "Photo & Video Service", "Full Ads Management", "Strategy Partner"] }
       ]
     }
   },
@@ -167,16 +154,15 @@ export const translations = {
     nav: {
       work: "Ons Werk",
       team: "Het Team",
-      local: "Support je Locals",
-      hi: "Hoi!",
-      start: "Project Starten"
+      local: "Impact",
+      start: "Vraag demo aan"
     },
     hero: {
       location: "Gevestigd in Utrecht",
       title_part1: "De",
       title_nova: "Nova",
       title_part2: "Formula.",
-      description: "\"Wij fixen de digitale hoofdpijn, zodat jij kunt shinen in je ambacht. Wij bouwen jouw online visitekaart die stille bezoekers omtovert tot <span class=\\\"text-secondary underline decoration-primary decoration-4 underline-offset-4\\\">vaste klanten.</span>\"",
+      description: "\"Wij fixen de digitale hoofdpijn, zodat jij kunt focussen op wat er echt toe doet. Wij bouwen jouw online visitekaart die stille bezoekers omtovert tot <span class=\\\"text-secondary underline decoration-primary decoration-4 underline-offset-4\\\">vaste klanten.</span>\"",
       cta_primary: "Kies voor groei",
       cta_secondary: "Ontmoet het team",
       team_caption: "Utrechts trots."
@@ -187,23 +173,32 @@ export const translations = {
       title_part2: "van Start naar Finish",
       cta: "Start Nu",
       days: [
-        { day: "Dag 1", title: "De Basis", desc: "Binnen 1-2 werkdagen spreken we elkaar over alle details en doelen." },
-        { day: "Dag 2", title: "De Kick-Off", desc: "We duiken diep in de strategie en bepalen de koers van het concept." },
-        { day: "Dag 3-6", title: "Het Ontwerp", desc: "Ons team bouwt een razendsnelle, hoogwaardige digitale oplossing." },
-        { day: "Dag 7", title: "De Lancering", desc: "Precies één week na de start leveren we het eindresultaat op." }
-      ]
+        { 
+          day: "Dag 1", 
+          title: "DE BASIS", 
+          desc: "Deel je visie en kaders met ons, zodat wij direct een proefversie van jouw website tot leven kunnen wekken." 
+        },
+        { 
+          day: "Dag 2", 
+          title: "DE KICK-OFF", 
+          desc: "Samen duiken we in het eerste ontwerp en gaan we aan de slag met jouw feedback om de perfecte digitale ervaring neer te zetten." 
+        },
+        { day: "Dag 3-6", title: "HET ONTWERP", desc: "Ons team bouwt razendsnel een hoogwaardige digitale oplossing." },
+        { day: "Dag 7", title: "DE LANCERING", desc: "Precies één week na de start leveren we het eindresultaat op." }
+      ],
+      feedback_popup: "dagelijkse design updates"
     },
     packages: {
-      title_part1: "Onze",
-      title_pro: "Packages",
-      subtitle: "Kies de brandstof voor jouw groei. Van een strakke basis tot een volledige digitale overname.",
+      title_part1: "Kies je",
+      title_pro: "Pakket",
+      subtitle: "Van strakke basis tot volledige digitale overname.",
       cta: "Protocol Starten",
       scroll_cta: "Kies Jouw Brandstof",
       tiers: [
-        { title: "De Digitale Identiteit", desc: "Strakke branding & SEO-geoptimaliseerde site.", features: ["Website Bouwen", "Logo Design", "Brand Image", "SEO Geoptimaliseerd", "24/7 Hosting"] },
-        { title: "De Groei Versneller", desc: "Snel schalen met gerichte marketing.", features: ["Alles uit Basis", "Online Marketing", "Ads Strategie", "High-Conversion UX", "Lead Tracking"], popular: true },
-        { title: "De Automatiserings Expert", desc: "Automatiseer flows en telefoon-systemen.", features: ["Alles uit Pro", "Automatisering", "Phone Systems (AI)", "CRM Integratie", "Smart Routing"] },
-        { title: "De Content Krachtpatser", desc: "Foto & Video + volledig ads management.", features: ["Alles uit Expert", "Foto & Video Service", "Advertentie Productie", "Full Ads Management", "Strategy Partner"] }
+        { title: "Digitale Identiteit", desc: "Strakke branding & SEO-geoptimaliseerde site.", features: ["Website Bouwen", "Logo Design", "Brand Image", "SEO Geoptimaliseerd", "24/7 Hosting"] },
+        { title: "Groei Versneller", desc: "Snel schalen met gerichte marketing.", features: ["Alles uit Basis", "Online Marketing", "Ads Strategie", "High-Conversion UX", "Lead Tracking"], popular: true },
+        { title: "Smart Automation", desc: "Automatiseer flows en telefoon-systemen.", features: ["Alles uit Pro", "Automatisering", "Phone Systems (AI)", "CRM Integratie", "Smart Routing"] },
+        { title: "Content & Performance", desc: "Foto & Video + volledig ads management.", features: ["Alles uit Expert", "Foto & Video Service", "Full Ads Management", "Strategy Partner"] }
       ]
     },
     team: {
@@ -222,17 +217,17 @@ export const translations = {
       title_part2: "Impact.",
       subtitle: "Wat onze partners zeggen over de Nova Formula.",
       list: [
-        { name: "Yara", company: "Yoga Hub", text: "Echt een verademing. In no-time stond alles live en het werkt vlekkeloos.", stars: 5 },
-        { name: "Sander", company: "Bakery de Tijd", text: "Ik wist niet dat we zo hard konden gaan zonder in te leveren op kwaliteit. Het team denkt echt met je mee.", stars: 5 },
-        { name: "Daan", company: "Coffee Culture", text: "De persoonlijke aanpak maakte het verschil. De automatisering loopt nu op de achtergrond, heerlijk.", stars: 5 },
-        { name: "Lisa", company: "Vintage Vault", text: "Gewoon fijn om met mensen te werken die doen wat ze zeggen. De wekelijkse deadlines werden overal gehaald.", stars: 5 }
+        { name: "Mandy", company: "Magic Piercing Studio", text: "In no-time stond alles live en het werkt vlekkeloos.", stars: 5 },
+        { name: "Lego", company: "Stubborn Tattoo Studio", text: "Het team denkt echt met je mee.", stars: 5 },
+        { name: "Christel", company: "Love by Sera", text: "De persoonlijke aanpak maakte het verschil. De automatisering loopt nu op de achtergrond, heerlijk.", stars: 5 },
+        { name: "Clemens", company: "Clemens RA", text: "Gewoon fijn om met mensen te werken die doen wat ze zeggen. Deadlines werden altijd gehaald.", stars: 5 }
       ]
     },
     howWeRoll: {
       title_part1: "De",
       title_nova: "Nova",
       title_edge: "Edge.",
-      description: "We hebben de hiërarchie gedumpt voor direct contact en korte lijnen. Als jong team zijn we razendsnel en focussen we ons volledig op resultaat dat écht impact maakt.",
+      description: "Als jong team zijn we razendsnel en focussen we ons volledig op resultaat dat écht impact maakt.",
       tags: {
         tech: "High-Conversion Tech",
         ux: "Frictionless UX"
@@ -240,7 +235,7 @@ export const translations = {
       cards: {
         crafted: {
           title: "Met Liefde Gemaakt",
-          desc: "Elke pixel is geplaatst met intentie en zorg. We steken ons hart in het bouwen van digitale ervaringen die menselijk voelen."
+          desc: "Elke pixel is geplaatst met intentie en zorg. We steken ons hart in het bouwen van een digitale ervaring die menselijk voelt."
         },
         fluff: {
           title: "Jouw succes is onze maatstaf",
@@ -248,7 +243,7 @@ export const translations = {
         },
         community: {
           title: "Community",
-          desc: "We leven, ademen en drinken koffie in Utrecht. Jouw zaak is onze trots."
+          desc: "We zorgen ervoor dat klanten een oprechte connectie met je opbouwen. Geen eenmalige kopers, maar loyale klanten die met een goed gevoel blijven terugkomen."
         },
         results: {
           title: "Resultaat Eerst",
@@ -263,68 +258,55 @@ export const translations = {
       description: "Vergeet de technische termen. Wij doen het zware werk, zodat jij alleen hoeft te genieten van het resultaat.",
       label_ordering: "Online Presence",
       label_transformation: "Digitale Transformatie",
-      label_branding: "Merk Logica",
+      label_branding: "BRANDING",
       projects: {
         local_baker: {
-          title: "De Lokale Bakker",
-          subtitle: "Community Bloei",
+          title: "magic piercing studio",
+          subtitle: "overzichtelijk design",
           problem: "Probleem: Verouderde statische landing page.",
-          solution: "Oplossing: Intuïtieve UX & 1-Klik Bestellen.",
-          result: "Resultaat: +140% Bestellingen"
+          solution: "Oplossing: SEO optimalisatie.",
+          result: "Resultaat: +140% Klanten"
         },
         yoga_hub: {
-          title: "Utrecht Yoga Hub",
-          subtitle: "Naadloze Member Flow",
+          title: "Stubborn Tattoo Studio",
+          subtitle: "Member Flow",
           problem: "Probleem: Rommelige WhatsApp boekingen.",
-          solution: "Oplossing: Naadloos Member Dashboard.",
+          solution: "Oplossing: Member Dashboard.",
           result: "Resultaat: Community Bouwen"
         },
         vintage_vault: {
           title: "Vintage Vault",
           subtitle: "Digital Storytelling",
           problem: "Probleem: Zwakke identiteit van de zaak.",
-          solution: "Oplossing: Meeslepend Brand Storytelling.",
-          result: "Resultaat: 3x Meer Bezoekers"
+          solution: "Oplossing: brand storytelling.",
+          result: "Resultaat: 400% online groei"
         }
       }
     },
     footer: {
       title_part1: "Focus op",
       title_craft: "Je Ambacht.",
-      description: "Klaar met spookachtige websites en het eeuwige gedoe met digitaal beheer? Wij nemen alle pijn weg. We bouwen elegante machines die klanten naar je deur brengen—zorgeloze, goedwerkende websites zodat jij weer kunt doen waar je van houdt.",
-      cta: "Start Jouw Groeiprotocol",
+      description: "Klaar met al dat digitale gedoe? Wij maken de ervaring persoonlijk en simpel. We bouwen elegante websites die klanten naar je deur brengen—zorgeloze, goedwerkende websites zodat jij kunt doen waar je van houdt.",
+      cta: "Gratis website design",
+      cta_subtitle: "Ontdek in 15 minuten hoe we jouw groei kunnen realiseren",
+      cta_badge: "Gratis proefversie",
       nav: "Navigatie",
-      links: ["Werk", "Team", "Lokaal", "Journal"],
-      copyright: "© 2026 NOVA UTRECHT. GEBOUWD MET LIEFDE & KOFFIE.",
-      privacy: "Privacy",
-      terms: "Voorwaarden"
+      links: ["Werk", "Team", "Impact"],
+      copyright: "© 2026 NOVA UTRECHT. GEBOUWD MET LIEFDE & KOFFIE."
     },
     modal: {
-      title_part1: "Neem de Volgende Stap",
-      title_growth: "voor jouw groei.",
-      description: "De aspirine voor je digitale hoofdpijn. Plan direct je call en herover de focus op wat écht telt voor jouw business.",
-      form: {
-        name: "Naam",
-        email: "Email",
-        url: "Bedrijfs URL (Optioneel)",
-        bottleneck: {
-          label: "Het Knelpunt",
-          placeholder: "Wat houdt je tegen?",
-          options: {
-            outdated: "Verouderde uitstraling",
-            conversions: "Lage conversie",
-            brand: "Merkidentiteit",
-            tech: "Technische problemen"
-          }
-        },
-        timeline: {
-          label: "Tijdsplanning",
-          asap: "ZSM",
-          nextMonth: "Volgende Maand",
-          exploring: "Gewoon Oriënteren"
-        },
-        submit: "Groeiprotocol Starten"
-      }
+      title_part1: "Plan een afspraak",
+      title_growth: "Gratis proefversie van jouw website",
+      description: "Na het kiezen van een tijdstip kunt u verdere informatie opgeven die wij verwerken in uw persoonlijke website. Denk hierbij aan:",
+      submit: "Afspraak Inplannen",
+      checklist: [
+        "Bedrijfsnaam & Slogan",
+        "Kernactiviteiten & Diensten",
+        "Doelgroep (Wie zijn uw klanten?)",
+        "USP's (Wat maakt u uniek?)",
+        "Huisstijl (Kleuren, Logo, Lettertypes)",
+        "Inspiratie (Sites die u mooi vindt)"
+      ]
     }
   }
 };
