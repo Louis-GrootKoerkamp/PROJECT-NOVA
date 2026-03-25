@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { translations } from "../translations";
 import { Language } from "../types";
 
-export const Footer = ({ onOpenPopup, language }: { onOpenPopup: () => void, language: Language }) => {
+export const Footer = ({ onOpenPopup, language, isMobile }: { onOpenPopup: () => void, language: Language, isMobile: boolean }) => {
   const t = translations[language].footer;
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -29,10 +29,12 @@ export const Footer = ({ onOpenPopup, language }: { onOpenPopup: () => void, lan
                 {t.cta}
               </button>
               <AnimatePresence>
-                {isHovered && (
+                {(isHovered || isMobile) && (
                   <motion.div
-                    initial={{ opacity: 0, scale: 0.5, y: 20, rotate: -10 }}
-                    animate={{ opacity: 1, scale: 1, y: -40, rotate: 4 }}
+                    initial={isMobile ? { opacity: 0, scale: 0.5, y: 0, rotate: -10 } : { opacity: 0, scale: 0.5, y: 20, rotate: -10 }}
+                    whileInView={isMobile ? { opacity: 1, scale: 1, y: -45, rotate: 4 } : {}}
+                    animate={!isMobile ? { opacity: 1, scale: 1, y: -40, rotate: 4 } : {}}
+                    viewport={{ once: true, margin: "-100px" }}
                     exit={{ opacity: 0, scale: 0.5, y: 10, rotate: -5 }}
                     transition={{ type: "spring", stiffness: 300, damping: 15 }}
                     className="absolute -top-16 left-0 bg-primary text-ink text-[10px] md:text-xs font-black uppercase tracking-widest px-4 py-2 border-2 border-ink shadow-[4px_4px_0px_0px_#141414] z-40 whitespace-nowrap pointer-events-none"

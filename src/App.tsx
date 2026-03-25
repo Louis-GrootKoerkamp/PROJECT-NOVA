@@ -57,7 +57,7 @@ export default function App() {
         <SprintSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
         <PackagesSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
       </main>
-      <Footer onOpenPopup={() => setIsPopupOpen(true)} language={language} />
+      <Footer onOpenPopup={() => setIsPopupOpen(true)} language={language} isMobile={isMobile} />
       
       <AnimatePresence>
         <BookingPopup isOpen={isPopupOpen} onClose={() => setIsPopupOpen(false)} language={language} />
