@@ -20,19 +20,39 @@ export const ReviewsSection = ({ language }: { language: Language }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2,
+                delayChildren: 0.1
+              }
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
           {t.list.map((review, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.95, y: 20 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ 
-                duration: 0.6, 
-                delay: idx * 0.1, 
-                ease: [0.22, 1, 0.36, 1] 
+              variants={{
+                hidden: { opacity: 0, y: 40, scale: 0.95, rotate: idx % 2 === 0 ? -2 : 2 },
+                visible: { 
+                  opacity: 1, 
+                  y: 0, 
+                  scale: 1, 
+                  rotate: rot[idx] === "-rotate-2" ? -2 : rot[idx] === "rotate-3" ? 3 : rot[idx] === "rotate-1" ? 1 : -3,
+                  transition: {
+                    duration: 0.8,
+                    ease: [0.16, 1, 0.3, 1]
+                  }
+                }
               }}
-              className={`flex flex-col p-8 border-4 border-neutral shadow-[12px_12px_0px_0px_#f5f5f5] ${cardColors[idx]} ${rot[idx]} hover:rotate-0 transition-transform duration-300`}
+              className={`flex flex-col p-8 border-4 border-neutral shadow-[12px_12px_0px_0px_#f5f5f5] ${cardColors[idx]} hover:rotate-0 transition-transform duration-300`}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(review.stars)].map((_, i) => (
@@ -50,7 +70,7 @@ export const ReviewsSection = ({ language }: { language: Language }) => {
               </div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
       
       {/* Background elements */}
