@@ -24,11 +24,15 @@ export const ReviewsSection = ({ language }: { language: Language }) => {
           {t.list.map((review, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.9, y: 30 }}
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1, type: "spring", stiffness: 100 }}
-              className={`flex flex-col p-8 border-4 border-neutral shadow-[12px_12px_0px_0px_#f5f5f5] ${cardColors[idx]} ${rot[idx]} hover:rotate-0 transition-transform duration-500`}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 0.6, 
+                delay: idx * 0.1, 
+                ease: [0.22, 1, 0.36, 1] 
+              }}
+              className={`flex flex-col p-8 border-4 border-neutral shadow-[12px_12px_0px_0px_#f5f5f5] ${cardColors[idx]} ${rot[idx]} hover:rotate-0 transition-transform duration-300`}
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(review.stars)].map((_, i) => (
