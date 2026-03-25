@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 import { translations } from "../translations";
 import { Language } from "../types";
 
-export const ReviewsSection = ({ language }: { language: Language }) => {
+export const ReviewsSection = ({ language, isMobile }: { language: Language, isMobile: boolean }) => {
   const t = translations[language].reviews;
   const cardColors = ["bg-neutral", "bg-secondary", "bg-tertiary", "bg-primary"];
   const rot = ["-rotate-2", "rotate-3", "rotate-1", "-rotate-3"];

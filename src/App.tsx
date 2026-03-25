@@ -53,7 +53,7 @@ export default function App() {
         <WorkSection language={language} isMobile={isMobile} />
         <HowWeRoll language={language} />
         <TeamSection language={language} isMobile={isMobile} />
-        <ReviewsSection language={language} />
+        <ReviewsSection language={language} isMobile={isMobile} />
         <SprintSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
         <PackagesSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
       </main>
