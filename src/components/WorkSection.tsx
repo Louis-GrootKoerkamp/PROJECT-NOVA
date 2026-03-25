@@ -76,11 +76,19 @@ export const WorkSection = ({ language, isMobile }: { language: Language, isMobi
               >
                 {t.label_ordering}
               </a>
-              <div className="absolute inset-4 bg-primary/95 opacity-0 group-hover:opacity-100 transition-opacity p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20">
+              <motion.div 
+                variants={{
+                  initial: { opacity: 0 },
+                  hover: { opacity: 1 },
+                  inView: { opacity: isMobile ? 1 : 0 }
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-4 bg-primary/95 p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20"
+              >
                 <p className="text-ink font-serif italic mb-2 text-sm md:text-base">{t.projects.local_baker.problem}</p>
                 <p className="text-ink font-serif italic mb-2">{t.projects.local_baker.solution}</p>
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">{t.projects.local_baker.result}</p>
-              </div>
+              </motion.div>
             </motion.div>
           </motion.div>
 
@@ -119,11 +127,19 @@ export const WorkSection = ({ language, isMobile }: { language: Language, isMobi
                 className="w-full h-full object-cover" 
                 referrerPolicy="no-referrer" 
               />
-              <div className="absolute inset-4 bg-secondary/95 opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col items-center text-center justify-center border-2 border-ink text-neutral overflow-hidden z-20">
+              <motion.div 
+                variants={{
+                  initial: { opacity: 0 },
+                  hover: { opacity: 1 },
+                  inView: { opacity: isMobile ? 1 : 0 }
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-4 bg-secondary/95 p-6 flex flex-col items-center text-center justify-center border-2 border-ink text-neutral overflow-hidden z-20"
+              >
                 <p className="font-serif italic mb-2 text-ink">{t.projects.yoga_hub.problem}</p>
                 <p className="font-serif italic mb-2 text-ink">{t.projects.yoga_hub.solution}</p>
                 <p className="text-2xl font-black uppercase tracking-tighter text-ink mt-2">{t.projects.yoga_hub.result}</p>
-              </div>
+              </motion.div>
               <div className="absolute -bottom-6 -right-6 bg-secondary text-neutral p-4 border-2 border-ink font-black text-xs uppercase tracking-widest rotate-3 z-30">
                 {t.label_transformation}
               </div>
@@ -165,11 +181,19 @@ export const WorkSection = ({ language, isMobile }: { language: Language, isMobi
                 className="w-full h-full object-cover"
               />
               <div className="absolute top-8 left-8 bg-tertiary text-ink px-3 py-1 text-[10px] font-black uppercase tracking-widest z-10">{t.label_branding}</div>
-              <div className="absolute inset-4 bg-tertiary/95 opacity-0 group-hover:opacity-100 transition-opacity p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20">
+              <motion.div 
+                variants={{
+                  initial: { opacity: 0 },
+                  hover: { opacity: 1 },
+                  inView: { opacity: isMobile ? 1 : 0 }
+                }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-4 bg-tertiary/95 p-4 md:p-6 flex flex-col items-center text-center justify-center border-2 border-ink overflow-hidden z-20"
+              >
                 <p className="text-ink font-serif italic mb-2 text-sm md:text-base">{t.projects.vintage_vault.problem}</p>
                 <p className="text-ink font-serif italic mb-2 text-sm md:text-base">{t.projects.vintage_vault.solution}</p>
                 <p className="text-xl md:text-2xl font-black uppercase tracking-tighter mt-2">{t.projects.vintage_vault.result}</p>
-              </div>
+              </motion.div>
             </motion.div>
           </motion.div>
         </div>
