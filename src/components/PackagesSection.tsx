@@ -26,9 +26,13 @@ export const PackagesSection = ({ language, onOpenPopup }: { language: Language,
               key={idx}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className={`relative flex flex-col p-8 border-4 border-ink shadow-[8px_8px_0px_0px_#141414] transition-all hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_#141414] ${colors[idx]} ${textColors[idx]} z-10`}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ 
+                duration: 0.5, 
+                delay: idx * 0.1,
+                ease: "easeOut" 
+              }}
+              className={`relative flex flex-col p-8 border-4 border-ink shadow-[8px_8px_0px_0px_#141414] hover:-translate-y-2 hover:shadow-[12px_12px_0px_0px_#141414] transition-transform duration-300 ease-out ${colors[idx]} ${textColors[idx]} z-10`}
             >
               {idx === 0 && (
                 <motion.div
