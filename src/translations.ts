@@ -136,6 +136,29 @@ export const translations = {
       ],
       feedback_popup: "Daily Design Updates"
     },
+    faq: {
+      title_part1: "Common",
+      title_part2: "Questions.",
+      subtitle: "Everything you need to know about the Nova Formula.",
+      questions: [
+        {
+          q: "How much does a collaboration with Studio Nova cost?",
+          a: "The investment varies per project, but our foundation starts at €949 for the standard package. Since no entrepreneur is the same, we offer custom additions that seamlessly align with your specific ambitions and needs."
+        },
+        {
+          q: "Where can I find examples of previous work?",
+          a: "As an ambitious new agency, we are currently proud to be building our first collaborations with local pioneers. That's why we offer a free trial version: so you can experience the power of our vision without any risk before making a final choice."
+        },
+        {
+          q: "What exactly is included in a Nova website?",
+          a: "At Studio Nova, 'standard' is a forbidden word. Everything is shaped to your wish: from the number of pages and advanced booking systems to complete webshops and flawless hosting. We ensure strong visibility on Google (SEO) and implement all tools that a modern agency makes essential for your growth."
+        },
+        {
+          q: "That's a lot of money, why is it worth it?",
+          a: "We understand it's a step, but don't see it as a cost—see it as fuel for your business. With the conversion power our websites deliver, this investment pays for itself. It's a leap into your own potential; a conscious choice to grow from 'good enough' to 'unparalleled'."
+        }
+      ]
+    },
     packages: {
       title_part1: "Our",
       title_pro: "Packages",
@@ -306,6 +329,29 @@ export const translations = {
         "USP's (Wat maakt u uniek?)",
         "Huisstijl (Kleuren, Logo, Lettertypes)",
         "Inspiratie (Sites die u mooi vindt)"
+      ]
+    },
+    faq: {
+      title_part1: "Veelgestelde",
+      title_part2: "Vragen.",
+      subtitle: "Alles wat je moet weten over de Nova Formula.",
+      questions: [
+        {
+          q: "Hoeveel kost een samenwerking met Studio Nova?",
+          a: "De investering varieert per project, maar ons fundament begint bij €949 voor de digitale identiteit. Omdat geen enkele ondernemer hetzelfde is, leveren we aanvullingen op maat aan die naadloos aansluiten op jouw specifieke ambities en behoeften."
+        },
+        {
+          q: "Waar kan ik eerdere successen en voorbeelden bekijken?",
+          a: "Als ambitieus nieuw bureau werken we nu vol trots aan onze eerste samenwerkingen met lokale bureaus. Juist daarom leveren we een gratis proefversie: zo ervaar je zonder enig risico de kracht van onze visie, voordat je een definitieve keuze maakt."
+        },
+        {
+          q: "Wat krijg ik precies als ik kies voor een Nova website?",
+          a: "Alles wordt gevormd naar jouw wens: van het aantal pagina's en geavanceerde boekingssystemen tot complete webshops en feilloze hosting. We zorgen voor een ijzersterke vindbaarheid op Google (SEO) en implementeren alle tools die een moderne agency essentieel maken voor jouw groei."
+        },
+        {
+          q: "Dat is een flinke investering, waarom is het dat waard?",
+          a: "We begrijpen dat het een stap is, maar zie het niet als een kostenpost—zie het als de brandstof voor je bedrijf. Met de conversiekracht die onze websites leveren, verdient deze investering zichzelf terug."
+        }
       ]
     }
   }

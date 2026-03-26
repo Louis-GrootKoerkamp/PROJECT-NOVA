@@ -10,6 +10,7 @@ import { TeamSection } from "./components/TeamSection";
 import { ReviewsSection } from "./components/ReviewsSection";
 import { SprintSection } from "./components/SprintSection";
 import { PackagesSection } from "./components/PackagesSection";
+import { FAQSectionNew } from "./components/ui/faq-monochrome";
 import { Footer } from "./components/Footer";
 import { BookingPopup } from "./components/BookingPopup";
 
@@ -56,6 +57,7 @@ export default function App() {
         <ReviewsSection language={language} isMobile={isMobile} />
         <SprintSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
         <PackagesSection language={language} onOpenPopup={() => setIsPopupOpen(true)} />
+        <FAQSectionNew language={language} />
       </main>
       <Footer onOpenPopup={() => setIsPopupOpen(true)} language={language} isMobile={isMobile} />
       
