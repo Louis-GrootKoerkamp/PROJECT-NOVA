@@ -350,7 +350,7 @@ export const translations = {
         },
         {
           q: "Dat is een flinke investering, waarom is het dat waard?",
-          a: "We begrijpen dat het een stap is, maar zie het niet als een kostenpost—zie het als de brandstof voor je bedrijf. Met de conversiekracht die onze websites leveren, verdient deze investering zichzelf terug, groeit je online presence en krijgt het de professionele uitstraling die het verdient."
+          a: "We begrijpen dat het een stap is, maar zie het niet als een kostenpost—zie het als de brandstof voor je bedrijf. Met de conversiekracht die onze websites leveren, verdient deze investering zichzelf niet alleen terug; het legt het fundament voor een krachtige digitale aanwezigheid en een onmiskenbaar professionele uitstraling."
         }
       ]
     }
